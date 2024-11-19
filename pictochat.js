@@ -3,7 +3,6 @@ const button = document.createElement('button');
 const eraser = document.createElement('button');
 var input = document.createElement("input");
 const slider = document.createElement("input");
-const style = document.createElement("style");
 slider.type = "range";
 slider.className = 'stroke';
 slider.min = '1'; 
@@ -23,81 +22,7 @@ document.body.appendChild(canvas);
 ctx.strokeStyle = '#000'; 
 ctx.lineWidth = 2;       
 let isDrawing = false;
-style.InnerHTML = `
- @font-face {
-    font-family: 'Nds';
-    src: url('https://pipe.miroware.io/5f586dbe02740c4a7fb69f99/Personal%20Sites/Fonts/NDS12.ttf');
-}
 
-.draw{
-     position: fixed;
-     bottom: 20px;
-     right: 5px;
-     width: 300px;
-     border: 2px solid #373737;
-  border-bottom: 2px solid #cecece;
-     background: white;
-     z-index: 999;
-     image-rendering: pixelated;
-}
-
-
-
-.button {
-     position: fixed;
-     bottom: 0;
-     right: 0px;
-     width: 150px;
-     background: url("https://frozenmicroobes.neocities.org/images/bar.png");
-     border: 2px solid #373737;
-     border-bottom: 2px solid #cecece;
-     font-family: 'Nds';
-     z-index: 999;
-}
-
-.button2 {
-     position: fixed;
-     bottom: 0;
-     right: 150px;   
-     width: 150px;
-     background: url("https://frozenmicroobes.neocities.org/images/bar.png");
-     border: 2px solid #373737;
-     border-bottom: 2px solid #cecece;
-     font-family: 'Nds';
-     z-index: 999;
-}
-
-
-.input {
-  position: fixed;
-     bottom: 320px;
-     right: 5px;
-     width: 150px;
-     border: 2px solid black;
-     z-index: 999;
-}
-.eraser {
-  position: fixed;
-     bottom: 320px;
-     right: 150px;
-     width: 150px;
-     height: 29px;
-     background: url("https://frozenmicroobes.neocities.org/images/bar.png");
-     border: 2px solid #373737;
-     border-bottom: 2px solid #cecece;
-     font-family: 'Nds';
-     z-index: 999;
-}
-
-.stroke {
-  position: fixed;
-     bottom: 350px;
-     right: 5px;
-     width: 300px;
-     border: 2px solid black;
-     z-index: 999;
-}`;
-document.head.appendChild(style);
 // dictionary
  
 function drawBackground() {
