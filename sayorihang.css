@@ -1,0 +1,14 @@
+/*SAYORI HANGING START*/
+html::before{
+    content: "";
+    width: 100%;
+    height: 350px;
+    background-image: url("https://i.ibb.co/6WgNr0T/sayori.png");
+    background-position: center;
+    background-size: contain;
+    position: fixed;
+    right: -40% !important;
+    bottom: 0 !important;
+    background-repeat: no-repeat;
+}
+/*SAYORI HANGING END*/
