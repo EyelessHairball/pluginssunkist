@@ -23,7 +23,7 @@ document.body.appendChild(canvas);
 ctx.strokeStyle = '#000'; 
 ctx.lineWidth = 2;       
 let isDrawing = false;
-style.InnerHTML = "
+style.InnerHTML = `
  @font-face {
     font-family: 'Nds';
     src: url('https://pipe.miroware.io/5f586dbe02740c4a7fb69f99/Personal%20Sites/Fonts/NDS12.ttf');
@@ -96,7 +96,8 @@ style.InnerHTML = "
      width: 300px;
      border: 2px solid black;
      z-index: 999;
-}";
+}`;
+document.head.appendChild(style);
 // dictionary
  
 function drawBackground() {
