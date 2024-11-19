@@ -1,15 +1,15 @@
 var iframe = document.createElement('iframe');
-var wrapper = document.createElement('div');
+var garticdiv = document.createElement('div');
 iframe.src = "https://garticphone.com/";
 iframe.frameBorder = "0"; 
-wrapper.classList.add('garticwrapper');
+garticdiv.classList.add('garticwrapper');
 iframe.classList.add('garticphone');
-wrapper.appendChild(iframe);
-document.body.appendChild(wrapper);
+garticdiv.appendChild(iframe);
+document.body.appendChild(garticdiv);
 var style = document.createElement('style');
-var button = document.createElement('button');
-button.id = 'togglebuttongartic';
-button.innerHTML = 'Gartic Phone';
+var togglegartic = document.createElement('button');
+togglegartic.id = 'togglebuttongartic';
+togglegartic.innerHTML = 'Gartic Phone';
 var settings = document.getElementById('thesettings');
 style.innerHTML = `
   .garticwrapper {
@@ -40,10 +40,10 @@ document.head.appendChild(style);
 // dictionary
 settings.appendChild(button);
 
-button.addEventListener('click', function() {
-  if (wrapper.style.display === "none") {
-    wrapper.style.display = "block"; 
+togglegartic.addEventListener('click', function() {
+  if (garticdiv.style.display === "none") {
+    garticdiv.style.display = "block"; 
   } else {
-    wrapper.style.display = "none";
+    garticdiv.style.display = "none";
   }
 });
