@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Nds';
+    src: url('https://pipe.miroware.io/5f586dbe02740c4a7fb69f99/Personal%20Sites/Fonts/NDS12.ttf');
+}
+
+@keyframes diag {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+html {
+  animation: diag 200s linear infinite;
+  background-image: url("https://frozenmicroobes.neocities.org/images/body.png");
+}
+
+
+#soapMode{
+background: repeating-linear-gradient(#f6f9f8, #f6f9f8 19px, #cbcedb 5px, #cbcedb 20px) !important;
+box-shadow: 1px 1px black;
+outline: 4px solid #5752a9;
+font-family: 'Nds';
+color: black;
+text-shadow: none;
+outline: none;
+font-size: 12px;
+line-height: 20px;
+}
+
+#menu{
+ background: #616161;
+ box-shadow: -2px 0 0 0 black, 2px 0 0 0 black, 0 -2px 0 0 black,0 2px 0 0 black;
+ border: none;
+ padding: 0px;
+} 
+
+button {
+  background: url("https://frozenmicroobes.neocities.org/images/bar.png");
+  border: 2px solid #373737;
+  border-bottom: 2px solid #cecece;
+  font-family: 'Nds';
+
+}
+
+a {
+  color: #aaaaaa;
+}
+
+a:hover {
+  filter: brightness(1.2);
+}
+
+summary {
+   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(199,199,199,1) 100%);
+   color: black;
+   height: 30px;
+   text-align: center;
+   font-family: 'Nds';
+   font-size: 12px;
+   padding: 5px
+}
+
+details{
+backdrop-filter: none;
+}
+
+h1{
+background: linear-gradient(180deg, rgba(142,166,182,1) 0%, rgba(97,134,158,1) 100%);
+font-family: 'Nds' !important;
+text-shadow: none !important;
+color: white !important;
+font-size: 20px;
+padding: 10px;
+text-align: left;
+border-radius: 0;
+margin: unset;
+margin-bottom: 10px;
+}
+
+.draw{
+     position: fixed;
+     bottom: 20px;
+     right: 5px;
+     width: 300px;
+     border: 2px solid #373737;
+  border-bottom: 2px solid #cecece;
+     background: white;
+     z-index: 999;
+     image-rendering: pixelated;
+}
+
+
+
+.button {
+     position: fixed;
+     bottom: 0;
+     right: 0px;
+     width: 150px;
+     background: url("https://frozenmicroobes.neocities.org/images/bar.png");
+     border: 2px solid #373737;
+     border-bottom: 2px solid #cecece;
+     font-family: 'Nds';
+     z-index: 999;
+}
+
+.button2 {
+     position: fixed;
+     bottom: 0;
+     right: 150px;   
+     width: 150px;
+     background: url("https://frozenmicroobes.neocities.org/images/bar.png");
+     border: 2px solid #373737;
+     border-bottom: 2px solid #cecece;
+     font-family: 'Nds';
+     z-index: 999;
+}
+
+
+.input {
+  position: fixed;
+     bottom: 320px;
+     right: 5px;
+     width: 150px;
+     border: 2px solid black;
+     z-index: 999;
+}
+.eraser {
+  position: fixed;
+     bottom: 320px;
+     right: 150px;
+     width: 150px;
+     height: 29px;
+     background: url("https://frozenmicroobes.neocities.org/images/bar.png");
+     border: 2px solid #373737;
+     border-bottom: 2px solid #cecece;
+     font-family: 'Nds';
+     z-index: 999;
+}
+
+.stroke {
+  position: fixed;
+     bottom: 350px;
+     right: 5px;
+     width: 300px;
+     border: 2px solid black;
+     z-index: 999;
+}
