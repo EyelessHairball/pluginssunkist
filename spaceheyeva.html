@@ -1,0 +1,264 @@
+<iframe width="0" height="0" src="https://www.youtube.com/embed/tw7HYXK2104//?&;amp;;autoplay=1&;loop=1&;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy" data-ruffle-polyfilled="">
+</iframe>
+<style>
+          /*layout created by FatRhabbit (aiden :3)*/
+/*spinning CD created by valentine (https://layouts.spacehey.com/layout?id=29048) check it out its cool*/
+/*super basic recolor basically basic so the basically waimfkolbimklgjmndfijimgk,re*/
+:root {
+--cd-image: url('https://fluorescent-lights.neocities.org/Digital-CD-Disk-Vector-Transparent-PNG.png');
+}
+.profile-pic {
+position: relative;
+width: 183px;
+filter: drop-shadow(0 0 0.25rem gray);
+}
+
+.profile-pic:after {
+content: "";
+background: url('https://fluorescent-lights.neocities.org/f0rzNHe.png'),url("https://www.sunkist-palace.net/images/border/pwa.png"), linear-gradient(150deg, rgba(255,255,255,0.4), rgba(255,255,255,0.2), 40%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.6));
+background-size: contain, cover;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.col.left h1:before{
+  content: "";
+  white-space: pre-wrap;
+  display: block;
+  height: 80px;
+  background-image: url(https://i.ibb.co/WPhThb2/lance.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position: bottom;
+}
+
+.profile-pic:before {
+content: "";
+background: var(--cd-image);
+position: absolute;
+top: 5px;
+left: -20px;
+width: 150px;
+height: 150px;
+background-repeat: no-repeat;
+z-index: -1;
+animation-name: spin;
+animation-duration: 5000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+transition: left ease 0.5s;
+}
+.profile-pic:hover:before {
+left: -75px;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.profile-pic .pfp-fallback {
+float: right;
+width: 163px;
+height: 160px;
+border: none;
+}
+.general-about .profile-pic img {
+max-width: inherit;
+}
+
+html{
+  cursor: url(https://cdn.custom-cursor.com/db/7122/32/anime-neon-genesis-evangelion-rei-ayanami-and-spear-of-longinus-cursor.png), default !important;
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 5px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+body{
+ animation: floating 3s ease-in-out infinite;
+}
+
+main:before {
+    width: 100%;
+    height: 170px;
+    display: block;
+    content: "";
+    background-image: url(https://i.ibb.co/P5Y9WKS/doyouloveme.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.top {
+    border: var(--borders);
+    margin-bottom: 10px;
+    font-family: 'pt mono';
+    background: (0,0,0,30%);
+}
+
+body{
+ background-image: url("https://i.ibb.co/xzKS19M/background.webp");
+  height: 100%;
+  position: relative;
+  opacity: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/*Body CSS*/
+}
+
+
+
+main{
+ background-color: black;
+    color:white;
+
+}
+
+.profile .contact, .profile .url-info, .profile .table-section, .setting-section, .home-actions {
+    border: 0px;
+}
+
+h4{
+text-transform: uppercase;
+    line-height: 0.95em;
+    display: inline-block;
+    font-size: 1.65em;
+    font-weight: 600;
+    transform-origin: left;
+    transform: scale(0.7, 1);
+    font-family: "Century Schoolbook", "Times New Roman", serif;
+    color:white;
+}
+
+td{
+color:black;
+margin: 0;
+}
+
+.profile .blurbs .section h4 {
+    margin: 0;
+    color: white;
+}
+
+a {
+    color: white;
+    font-family: "Century Schoolbook", "Times New Roman", serif;
+    text-transform: uppercase;
+}
+
+
+.logout-btn {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    color:white;
+    text-transform: uppercase;
+    line-height: 0.95em;
+    display: inline-block;
+    font-weight: 600;
+    transform-origin: left;
+    transform: scale(0.7, 1);
+}
+
+nav .top{
+background: black !important;
+}
+nav .links {
+    background-color: black;
+}
+.profile .blurbs .heading, .profile .friends .heading {
+    background: #525252;
+    color: white;
+    padding: 2px 7px;
+}
+
+.blurbs .inner {
+        border-width: 0px;
+        border-style: solid;
+        padding: 10px;
+        height: 217px;
+        background-image: url();
+        opacity: 0.75;
+    }
+
+.profile .contact .heading,
+.profile .table-section .heading,
+.setting-section .heading,
+.home-actions .heading {
+  background: #525252;
+  color: white;
+  padding: 2px 7px;
+}
+
+.details-table td {
+    background: #adadad;
+    vertical-align: top;
+}
+
+.details-table td:first-child {
+    background: #525252;
+    color: white;
+    font-weight: bold;
+    width: 33%;
+    font-family: "Century Schoolbook", "Times New Roman", serif;
+    color:white;
+    text-transform: uppercase;
+}
+
+.comments-table td:first-child, .music-table td:first-child {
+    background: #525252;
+    text-align: center;
+    font-weight: bold;
+    width: 38%;
+
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: black;
+}
+
+.comments-table td, .music-table td {
+    background: #adadad;
+    vertical-align: top;
+}
+
+.comment-replies {
+    padding: 0 5px;
+    border: 5px ridge white;
+    margin-top: 10x;
+    background-color: #8e8e8e;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 70%;
+    margin: 10px 0 10px;
+    padding: 10px 5px;
+    background-color: black;
+}
+          </style>
+<div style="float:  ; max-height: 400px; position: absolute; left: 1px; bottom: 0px; z-index: 200;"><img src="https://quaggos.neocities.org/Images/Azumanga%20Daioh%20Stuff/Azubounce.gif" width="350" height="350"/></div>
